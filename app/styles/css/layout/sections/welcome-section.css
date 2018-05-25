@@ -1,0 +1,47 @@
+.main-container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.welcome-section {
+  background: url("../../../../img/backgroung-welcome-section.png");
+  height: 100vh; }
+
+.fonts-welcome {
+  background-image: url("../../../../img/lantern.png");
+  width: 857px;
+  height: 352px;
+  margin: 0 auto;
+  -webkit-animation-name: motion;
+          animation-name: motion;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top; }
+
+@-webkit-keyframes motion {
+  from {
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg); }
+  to {
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg); } }
+
+@keyframes motion {
+  from {
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg); }
+  to {
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg); } }
+
+.wrapper-lantern {
+  margin-top: -11px; }
