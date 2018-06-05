@@ -1,11 +1,11 @@
 .main-header {
-  background-image: url('../../../img/logo.png');
+  background: url('../../../img/logo.png') center center;
   background-size: cover;
-  background-position: center center;
   width: 1200px;
   height: 400px;
   position: relative;
   z-index: 1;
+
 }
 
 .list-info {
@@ -17,6 +17,10 @@
   li {
     display: flex;
     margin-right: 40px;
+  }
+
+  li:last-child {
+    margin-right: 0;
   }
 
   li:before {
@@ -53,6 +57,9 @@
     padding-left: 23px;
       div p {
         font-size: 18px;
+      }
+      a {
+        text-decoration: none;
       }
   }
 
@@ -91,7 +98,7 @@
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: $yellow-color;
-  box-shadow: 0 0 55px 10px  $yellow-color;
+  text-shadow: 2px 0 25px $yellow-color;
   outline: none;
 }
 

@@ -10,3 +10,12 @@ $yellow-color:#e5d55a;
   font-family: 'ArnoldBocklinC-Regular';
   src: url('../../../fonts/arnoldbocklinC.ttf');
 }
+
+@font-face {
+  font-family: 'ProxNovaLight-Regular';
+  src: url('../../../fonts/proximanovalight.ttf');
+}
+
+body {
+  background: url('../../../img/body.png') repeat;
+}

@@ -4,6 +4,13 @@
   font-family: 'ArnoldBocklinC-Regular';
   src: url("../../../fonts/arnoldbocklinC.ttf"); }
 
+@font-face {
+  font-family: 'ProxNovaLight-Regular';
+  src: url("../../../fonts/proximanovalight.ttf"); }
+
+body {
+  background: url("../../../img/body.png") repeat; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,10 +55,9 @@ table {
   border-spacing: 0; }
 
 .main-header {
-  background-image: url("../../../img/logo.png");
+  background: url("../../../img/logo.png") center center;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: center center;
   width: 1200px;
   height: 400px;
   position: relative;
@@ -74,6 +80,8 @@ table {
     display: -ms-flexbox;
     display: flex;
     margin-right: 40px; }
+  .list-info li:last-child {
+    margin-right: 0; }
   .list-info li:before {
     content: "";
     width: 43px;
@@ -101,6 +109,8 @@ table {
     padding-left: 23px; }
     .list-info .phone-numbers div p {
       font-size: 18px; }
+    .list-info .phone-numbers a {
+      text-decoration: none; }
   .list-info p {
     font-family: 'ArnoldBocklinC-Regular';
     color: #ffffff;
@@ -130,8 +140,7 @@ table {
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #e5d55a;
-  -webkit-box-shadow: 0 0 55px 10px #e5d55a;
-          box-shadow: 0 0 55px 10px #e5d55a;
+  text-shadow: 2px 0 25px #e5d55a;
   outline: none; }
 
 .main-container {
@@ -139,10 +148,9 @@ table {
   margin: 0 auto; }
 
 .welcome-section {
-  background: url("../../../../img/backgroung-welcome-section.png");
-  height: 100vh; }
+  background: url("../../../../img/backgroung-welcome-section.png") center top no-repeat; }
 
-.fonts-welcome {
+.fonts-lantern {
   background-image: url("../../../../img/lantern.png");
   width: 857px;
   height: 352px;
@@ -161,23 +169,75 @@ table {
           animation-direction: alternate;
   -webkit-transform-origin: center top;
       -ms-transform-origin: center top;
-          transform-origin: center top; }
+          transform-origin: center top;
+  -webkit-filter: drop-shadow(12px 12px 10px rgba(237, 220, 94, 0.4));
+          filter: drop-shadow(12px 12px 10px rgba(237, 220, 94, 0.4)); }
 
 @-webkit-keyframes motion {
   from {
-    -webkit-transform: rotate(-13deg);
-            transform: rotate(-13deg); }
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg); }
   to {
-    -webkit-transform: rotate(13deg);
-            transform: rotate(13deg); } }
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg); } }
 
 @keyframes motion {
   from {
-    -webkit-transform: rotate(-13deg);
-            transform: rotate(-13deg); }
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg); }
   to {
-    -webkit-transform: rotate(13deg);
-            transform: rotate(13deg); } }
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg); } }
 
 .wrapper-lantern {
-  margin-top: -11px; }
+  margin-top: -13px; }
+
+.section-title {
+  background-image: url("../../../../img/title.png");
+  width: 460px;
+  height: 157px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px; }
+  .section-title .title {
+    font-family: 'ArnoldBocklinC-Regular';
+    text-align: center;
+    position: relative;
+    top: 54px;
+    font-size: 36px; }
+
+.events {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .events li {
+    margin-right: 70px;
+    background: url("../../../../img/background-events.png") repeat-x;
+    width: 260px;
+    height: 340px;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
+    .events li img {
+      padding-top: 20px; }
+  .events li:last-child {
+    margin-right: 0; }
+  .events li:hover {
+    -webkit-filter: none;
+            filter: none; }
+
+.wrapper-news {
+  padding-bottom: 230px; }
+
+.events p {
+  font-family: ProxNovaLight-Regular;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 35px;
+  text-align: center; }
